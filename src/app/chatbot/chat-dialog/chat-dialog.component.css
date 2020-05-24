@@ -1,0 +1,93 @@
+.from{
+    background: red;
+}
+.to
+{
+    background: blue;
+}
+
+#chat-message-list
+{
+    grid-area: chat-message-list;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 20px;
+    
+    
+}
+.chat-message-list
+{
+    grid-area: chat-message-list;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 20px;
+    
+}
+.message-row
+{
+    display: grid;
+    grid-template-columns: 70%;
+    margin-bottom: 20px;
+}
+.message-content
+{
+    display: grid;
+}
+.you-message
+{
+    justify-content: end;
+    
+}
+.you-message .message-content
+{
+    justify-items: end;
+}
+.other-message
+{
+    justify-items: start;
+}
+.other-message .message-content
+{
+    grid-template-columns: 48px 1fr;
+    grid-column-gap: 5px;
+}
+.message-row img
+{
+    grid-row: span 2;
+}
+
+.message-text
+{
+    padding: 9px 14px;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+.you-message .message-text
+{
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 14px 14px 0 14px;
+}
+.other-message .message-text
+{
+    background:#eee;
+    color: #111;
+    border: 1px solid #ddd;
+    border-radius: 14px 14px 14px 0;
+}
+
+
+
+.example-card {
+    max-width: 800px;
+  }
+  .example-card1 {
+    max-width: 480px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdveeR6eieylg70Zs1akLz84U46kCm62Zmcu3WkbTSAEbOeVLH&s');
+    background-size: cover;
+  }
+  

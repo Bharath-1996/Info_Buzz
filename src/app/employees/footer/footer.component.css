@@ -1,0 +1,21 @@
+footer {
+    clear: both;
+    position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(34, 32, 32);
+   color: white;
+   
+     
+}
+.chat img
+{
+ width: 35px;
+ height: 40px;
+ position: relative;
+}
+.chat{
+    padding-top: 5px;
+    margin-left: 490px;
+}

@@ -1,0 +1,21 @@
+<div class="rowcolumns">
+      
+     <div class="chat-container" *ngFor="let item of list">
+         <!-- <div class="row">
+            <a href="#">{{item.name}}</a>
+        
+            <p>{{item.message}}</p>
+         </div> -->
+
+         <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <p class="para" class="rounded-pill">{{item.name}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-9">
+                <p class="rounded-pill">{{item.message}}</p>
+            </div>
+        </div>
+        
+      </div>
+      <input type="text" name="firstName"  #firstName="ngModel" id="message" autocomplete="off" placeholder="Chat here..." (keyup.enter)="chatsend($event.target.value)" [(ngModel)]="msgVal" />
+  </div>

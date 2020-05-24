@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 400px;
+  }
+  .example-card1 {
+    max-width: 480px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdveeR6eieylg70Zs1akLz84U46kCm62Zmcu3WkbTSAEbOeVLH&s');
+    background-size: cover;
+  }
+  

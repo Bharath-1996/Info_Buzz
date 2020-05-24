@@ -1,0 +1,82 @@
+<!-- <div class="container">
+    <div class="row">
+     <div class="col-sm-5 mx-auto mt-5 text-center"> 
+    <div class="card bg-light" style="width: 28rem;">
+    <div class="card-header">
+    Login
+    </div>
+    <div class="card-body">
+        <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="email" [(ngModel)]="email" class="form-control" placeholder="Email" required>
+                    </div>
+                 </div>
+        </div>
+        <div class="row">
+                 <div class="col-12">
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="password" class="form-control" placeholder="Password" required>
+                        
+                    </div>
+                 </div>
+                          
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" (click)="login()">Login</button>
+            </div>
+            <a style="margin-left: 9rem;" (click)="resetpassword()" type="button" class="nav-link">Forgot Password</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>   -->
+
+
+
+
+    <div class="container p-3">
+        <div class="offset-3 col-6">
+          <div class="card">
+            <div class="card-header  font-weight-bold">
+              Login
+            </div>
+            <div class="card card-body" style="padding:30px;">
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <input type="email" [(ngModel)]="email" class="form-control" placeholder="Email" required>
+                        </div>
+                     </div>
+            </div>
+            <div class="row">
+                     <div class="col-12">
+                        <div class="form-group">
+                            <input type="password" [(ngModel)]="password" class="form-control" placeholder="Password" required (keyup.enter)="login()">
+                            
+                        </div>
+                     </div>
+                              
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button [disabled]="!(email&&password)" class="btn btn-primary" (click)="login()">Login</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <a (click)="resetpassword()" type="button" class="nav-link">Forgot Password</a>
+                </div>
+                
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="spinner" style="margin-left: 600px;">
+           <mat-spinner *ngIf="showSpinner"></mat-spinner>
+      </div>

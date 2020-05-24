@@ -1,0 +1,8 @@
+.is-invalid {
+    border-left: solid 5px rgb(19, 18, 18);
+  }
+  
+  .material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+  }

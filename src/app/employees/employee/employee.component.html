@@ -1,0 +1,47 @@
+<div class="col-md-6" style="float: left;">
+<h1 class="display-4">Employee Register</h1>
+<form #form="ngForm" autocomplete="off" (submit)=onSubmit(form)>
+<input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+<div class="form-group">
+    <input name="fullName" #fullName="ngModel" [(ngModel)]="service.formData.fullName" class="form-control" placeholder="FullName" required>
+     <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">FullName is required</div>
+</div>
+<div class="form-group">
+    <input name="position" #position="ngModel" [(ngModel)]="service.formData.position" class="form-control" placeholder="position" required>
+    <div *ngIf="position.invalid && position.touched" class="validation-error">position is required</div>
+</div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <input name="empCode" #empCode="ngModel" [(ngModel)]="service.formData.empCode" class="form-control" placeholder="empCode" required>
+        <div *ngIf="empCode.invalid && empCode.touched" class="validation-error">empCode is required</div>
+    </div>
+    <div class="form-group col-md-6">
+        <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="mobile" required>
+        <div *ngIf="mobile.invalid && mobile.touched" class="validation-error">mobile is required</div>
+    </div>
+</div>
+<div class="form-group">
+    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">submit</button>
+</div>
+</form>
+</div>
+<div class="card" style="width: 25rem;">
+    <div class="card-body">
+  
+    <form [formGroup]="formTemplate" (submit)="uploadpic(formTemplate.value)">
+        <div class="text-center">
+            <img [src]="imgsrc" width="350px" height="250px" (click)="fileuploader.click()">
+        </div>
+        <div class="form-group">
+            <label>select pic to upload</label>
+            <input type="file" accept="image/*" class="form-control" formControlName="imageUrl" #fileuploader (change)="showpreview($event)">
+            <div class="text-danger" *ngIf="issubmitted && formControls.imageUrl.errors?.required">This field is required</div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">upload</button>
+        </div>
+    </form>
+    
+
+</div>
+</div>

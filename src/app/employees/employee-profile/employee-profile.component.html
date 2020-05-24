@@ -1,0 +1,105 @@
+<!-- <p>Employee Info!</p>
+<div *ngIf="recievedRow">
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            Name
+       </div>
+       <div class="form-group col-md-5">
+        <input name="fullName"  class="form-control"   value="{{recievedRow.name}}" disabled>
+       </div>
+    </div>
+<div class="form-group">
+    <input name="fullName"  class="form-control"   value="{{recievedRow.name}}" disabled>
+</div>
+<div class="form-group">
+    <input name="fullName"  class="form-control"   value="{{recievedRow.name}}" disabled> 
+</div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <input name="empCode" class="form-control"  value="{{recievedRow.name}}" disabled>
+        
+    </div>
+    <div class="form-group col-md-6">
+        <input name="empCode" class="form-control"  value="{{recievedRow.name}}" disabled>
+        
+    </div>
+</div>
+<div class="form-group">
+    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">submit</button>
+</div>
+</div>
+ -->
+ <div class="form-row">
+ <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{recievedRow.name}}</mat-card-title>
+      <mat-card-subtitle>Profile</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbNpnfOB2P-cWuGoTIJrSTnbyugR0faFv03_bE0rX_i7RDz3I7g&s" alt="Photo of a Shiba Inu"> -->
+    <img mat-card-image [src]="imgsrc" alt="Photo of a Shiba Inu" style="width: 400px;height: 300px;">
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ad expedita a, id laudantium quis amet temporibus mollitia ea atque veniam odio neque doloribus quidem dicta maxime error magnam consectetur?
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Mail</button>
+      <button mat-button>Contact</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card class="example-card1" style="margin-left: 1rem;width: 600px;">
+    <mat-card-header>
+      <mat-card-title style="margin-left: 5rem;">Info</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div *ngIf="recievedRow">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <label class="control-label"><h5>Name</h5></label>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                    <div id="name"><h5>{{recievedRow.name}}</h5></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <label class="control-label"><h5>EmpID</h5></label>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                    <div id="name"><h5>{{recievedRow.empCode}}</h5></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <label class="control-label"><h5>Position</h5></label>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                    <div id="name"><h5>{{recievedRow.position}}</h5></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <label class="control-label"><h5>Mobile</h5></label>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                    <div id="name"><h5>{{recievedRow.mobile}}</h5></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <label class="control-label"><h5>Email</h5></label>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                    <div id="name"><h5>{{recievedRow.email}}</h5></div>
+                </div>
+            </div>
+        
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div> 

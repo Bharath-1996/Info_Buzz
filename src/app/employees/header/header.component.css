@@ -1,0 +1,13 @@
+.sidenav
+{
+  background: red;
+  width: 50px;
+  float: right;
+  margin-top: 250px;
+  
+}
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 1px; 
+}

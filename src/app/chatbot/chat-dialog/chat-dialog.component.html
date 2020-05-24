@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+
+<!-- <div id="chat-message-list" class="chat" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+      <div class="container">
+      <ng-container *ngFor="let message of messages | async">
+          <div class="message" [ngClass]="{'message-row other-message':message.sentBy==='bot',
+                                              'message-row you-message':message.sentBy==='user'}">
+               <div class="message-content">
+               <div *ngIf="message.sentBy==='bot'">
+                <img src="../../../assets/images/chatbot.jpg" style="border-radius: 50%;width: 400px;">
+              </div>
+                  <div class="message-text">
+                    {{message.content}}
+                  </div>
+                </div>                           
+          </div>
+      
+      </ng-container>
+      
+      </div>
+  </div>
+  <div class="container">
+    <label for="nameField">Your message</label>
+    <input id="content" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+    <button (click)="sendMessage()">Send</button>
+  </div> -->
+
+
+
+
+
+
+
+
+
+  <!-- <div id="chat-message-list">
+    <div #scrollMe style="overflow: scroll; height: 400px;">
+    <ng-container *ngFor="let message of messages | async">
+        <div class="message" [ngClass]="{'message-row other-message':message.sentBy==='bot',
+                                            'message-row you-message':message.sentBy==='user'}">
+             <div class="message-content">
+             <div *ngIf="message.sentBy==='bot'">
+              <img src="../../../assets/images/chatbot.jpg" style="border-radius: 50%;width: 400px;">
+            </div>
+                <div class="message-text">
+                  {{message.content}}
+                </div>
+              </div>                           
+        </div>
+    
+    </ng-container>
+    <label for="nameField">Your message</label>
+  <input id="content" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+  <button (click)="sendMessage()">Send</button>
+</div>
+    
+</div> -->
+
+
+
+
+
+
+
+
+
+    
+    <div #scrollMe style="overflow-y: scroll; height: 350px;">
+    <ng-container *ngFor="let message of messages | async">
+        <div class="message" [ngClass]="{'message-row other-message':message.sentBy==='bot',
+                                            'message-row you-message':message.sentBy==='user'}">
+             <div class="message-content">
+             <div *ngIf="message.sentBy==='bot'">
+              <img src="../../../assets/images/chatbot.jpg" style="border-radius: 50%;width: 400px;">
+            </div>
+                <div class="message-text">
+                  {{message.content}}
+                </div>
+              </div>                           
+        </div>
+        
+    </ng-container>
+        <label for="nameField">Your message</label>
+        <input id="content" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+        <button (click)="sendMessage()">Send</button>
+    
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+       <mat-card-subtitle>Info-Buzz Chat-Bot</mat-card-subtitle>
+    </mat-card-header>
+    
+   <mat-card-content>
+      
+        <div id="chat-message-list">
+            <div class="container">
+                <ng-container *ngFor="let message of messages | async">
+                    <div class="message" [ngClass]="{'message-row other-message':message.sentBy==='bot',
+                                                        'message-row you-message':message.sentBy==='user'}">
+                        <div class="message-content">
+                        <div *ngIf="message.sentBy==='bot'">
+                        <img src="../../../assets/images/chatbot.jpg" style="border-radius: 50%;width: 400px;">
+                        </div>
+                            <div class="message-text">
+                            {{message.content}}
+                            </div>
+                        </div>                           
+                    </div>
+                
+                </ng-container>
+            </div>
+        </div>
+
+
+    </mat-card-content>
+    <label for="nameField">Your message</label>
+      <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+      <button (click)="sendMessage()">Send</button>
+  </mat-card> -->

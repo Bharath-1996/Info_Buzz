@@ -1,0 +1,26 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.fill-space{
+    flex: 1 1 auto;
+}
+.hide{
+    display: none;
+}
+mat-footer-row mat-footer-cell
+{
+  justify-content: center;
+  font-style: italic;
+}
+.search-form-field
+{
+    width: 100%;
+    flex: 1 1 auto;
+}
